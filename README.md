@@ -34,17 +34,16 @@ of a separate project. All submodules track the `xpack-development` branch.
   ([micro-os-plus-iii](https://github.com/micro-os-plus/micro-os-plus-iii.git))
 - `targets/` - the code specific to the hardware:
   - `architectures/` - the architecture ports:
+    - `cortexm` - [micro-os-plus-iii-cortexm](https://github.com/micro-os-plus/micro-os-plus-iii-cortexm.git)
     - `aarch32` - [micro-os-plus-iii-aarch32](https://github.com/micro-os-plus/micro-os-plus-iii-aarch32.git)
     - `aarch64` - [micro-os-plus-iii-aarch64](https://github.com/micro-os-plus/micro-os-plus-iii-aarch64.git)
-    - `cortexm` - [micro-os-plus-iii-cortexm](https://github.com/micro-os-plus/micro-os-plus-iii-cortexm.git)
+    - `riscv` - [micro-os-plus-iii-riscv](https://github.com/micro-os-plus/micro-os-plus-iii-riscv.git)
     - `synthetic-posix` - [micro-os-plus-iii-posix-arch](https://github.com/micro-os-plus/micro-os-plus-iii-posix-arch.git),
       to run on the development host
-    - `riscv` - [micro-os-plus-iii-riscv](https://github.com/micro-os-plus/micro-os-plus-iii-riscv.git)
 - `maintenance/` - the files used to build, format and maintain the projects,
   not part of the µOS++ runtime
 
-More projects (core libraries, I/O, debug, testing, devices, platforms and
-3rd-party packages) will be added to the suite later.
+More projects will be added to the suite later.
 
 ## Using in projects
 
@@ -67,11 +66,11 @@ mkdir my-project && cd my-project
 xpm init
 xpm install --verbose \
   github:micro-os-plus/micro-os-plus-iii \
+  github:micro-os-plus/micro-os-plus-iii-cortexm \
   github:micro-os-plus/micro-os-plus-iii-aarch32 \
   github:micro-os-plus/micro-os-plus-iii-aarch64 \
-  github:micro-os-plus/micro-os-plus-iii-cortexm \
-  github:micro-os-plus/micro-os-plus-iii-posix-arch \
-  github:micro-os-plus/micro-os-plus-iii-riscv
+  github:micro-os-plus/micro-os-plus-iii-riscv \
+  github:micro-os-plus/micro-os-plus-iii-posix-arch
 ```
 
 This command installs all the listed packages below the `xpacks` folder.
