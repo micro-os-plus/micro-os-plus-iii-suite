@@ -21,6 +21,15 @@
   "bugs": {
     "url": "https://github.com/micro-os-plus/micro-os-plus-iii-suite/issues"
   },
+  "$dependenciesUrls": {
+    "glob": "https://www.npmjs.com/package/glob",
+    "del-cli": "https://www.npmjs.com/package/del-cli",
+    "json": "https://www.npmjs.com/package/json",
+    "json5": "https://www.npmjs.com/package/json5",
+    "jsonc-parser": "https://www.npmjs.com/package/jsonc-parser",
+    "liquidjs": "https://www.npmjs.com/package/liquidjs"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@xpack/npm-packages-helper": "github:xpack/npm-packages-helper",
     "del-cli": "^8.0.1",
@@ -41,6 +50,7 @@
     "npm-link": "npm link",
     "git-log": "git log --pretty='%cd * %h %s' --date=short",
     "update-changelog": "node maintenance/scripts/update-changelog.mjs CHANGELOG.md",
+    "git-pull-helper": "git -C ${HOME}/Work/micro-os-plus/build-helper-xpack.git pull",
     "update-submodules-check": "node maintenance/scripts/update-submodules.mjs --dry-run",
     "update-submodules": "node maintenance/scripts/update-submodules.mjs",
     "format-md-check": "prettier --config maintenance/config/.prettierrc.json --ignore-path maintenance/config/.prettierignore --prose-wrap always --check \"*.md\"",
@@ -49,6 +59,6 @@
     "postversion": "git push origin --all && git push origin --tags"
   },
   "engines": {
-    "node": ">=20.0"
+    "node": ">=22.12"
   }
 }
