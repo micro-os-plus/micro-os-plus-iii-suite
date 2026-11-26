@@ -1,0 +1,24 @@
+[submodule "rtos"]
+	path = rtos
+	url = https://github.com/micro-os-plus/micro-os-plus-iii.git
+	branch = xpack-development
+[submodule "targets/architectures/synthetic-posix"]
+	path = targets/architectures/synthetic-posix
+	url = https://github.com/micro-os-plus/micro-os-plus-iii-posix-arch.git
+	branch = xpack-development
+[submodule "targets/architectures/cortexm"]
+	path = targets/architectures/cortexm
+	url = https://github.com/micro-os-plus/micro-os-plus-iii-cortexm.git
+	branch = xpack-development
+[submodule "targets/architectures/aarch32"]
+	path = targets/architectures/aarch32
+	url = https://github.com/micro-os-plus/micro-os-plus-iii-aarch32.git
+	branch = xpack-development
+[submodule "targets/architectures/aarch64"]
+	path = targets/architectures/aarch64
+	url = https://github.com/micro-os-plus/micro-os-plus-iii-aarch64.git
+	branch = xpack-development
+[submodule "targets/architectures/riscv"]
+	path = targets/architectures/riscv
+	url = https://github.com/micro-os-plus/micro-os-plus-iii-riscv.git
+	branch = xpack-development

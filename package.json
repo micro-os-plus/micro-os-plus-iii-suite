@@ -1,0 +1,54 @@
+{
+  "name": "@micro-os-plus/iii-suite",
+  "version": "0.1.0",
+  "description": "This repository provides the **µOS++ III Suite**, a set of projects that together form the **third edition** of the µOS++ framework.",
+  "keywords": [
+    "micro-os-plus",
+    "suite",
+    "framework"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Liviu Ionescu",
+    "email": "ilg@livius.net",
+    "url": "https://github.com/ilg-ul"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micro-os-plus/micro-os-plus-iii-suite.git"
+  },
+  "homepage": "https://github.com/micro-os-plus/micro-os-plus-iii-suite#readme",
+  "bugs": {
+    "url": "https://github.com/micro-os-plus/micro-os-plus-iii-suite/issues"
+  },
+  "devDependencies": {
+    "@xpack/npm-packages-helper": "github:xpack/npm-packages-helper",
+    "del-cli": "^8.0.1",
+    "glob": "^14.0.4",
+    "json": "^11.0.0",
+    "json5": "^2.2.3",
+    "jsonc-parser": "^3.3.1",
+    "liquidjs": "^10.30.1",
+    "prettier": "^3.9.10"
+  },
+  "scripts": {
+    "generate-top-commons": "node node_modules/@xpack/npm-packages-helper/maintenance/scripts/generate-top-commons.mjs --micro-os-plus",
+    "npm-install": "npm install",
+    "npm-link-helper": "npm link @xpack/npm-packages-helper",
+    "npm-outdated": "npm outdated",
+    "npm-ci": "npm ci",
+    "npm-pack": "npm pack",
+    "npm-link": "npm link",
+    "git-log": "git log --pretty='%cd * %h %s' --date=short",
+    "update-changelog": "node maintenance/scripts/update-changelog.mjs CHANGELOG.md",
+    "update-submodules-check": "node maintenance/scripts/update-submodules.mjs --dry-run",
+    "update-submodules": "node maintenance/scripts/update-submodules.mjs",
+    "format-md-check": "prettier --config maintenance/config/.prettierrc.json --ignore-path maintenance/config/.prettierignore --prose-wrap always --check \"*.md\"",
+    "format-md": "prettier --config maintenance/config/.prettierrc.json --ignore-path maintenance/config/.prettierignore --prose-wrap always --write \"*.md\"",
+    "deep-clean": "del-cli node_modules package-lock.json *.tgz",
+    "postversion": "git push origin --all && git push origin --tags"
+  },
+  "engines": {
+    "node": ">=20.0"
+  }
+}
