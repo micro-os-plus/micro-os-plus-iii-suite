@@ -58,6 +58,27 @@
     "deep-clean": "del-cli node_modules package-lock.json *.tgz",
     "postversion": "git push origin --all && git push origin --tags"
   },
+  "xpack": {
+    "minimumXpmRequired": "0.23.2",
+    "devDependencies": {
+      "@xpack-dev-tools/clang": "21.1.8-1.1"
+    },
+    "actions": {
+      "xpm-install": "xpm install",
+      "xpm-link-submodules": [
+        "xpm link -C rtos",
+        "xpm link -C targets/architectures/cortexm",
+        "xpm link -C targets/architectures/synthetic-posix",
+        "xpm link -C targets/architectures/aarch32",
+        "xpm link -C targets/architectures/aarch64",
+        "xpm link -C targets/architectures/riscv",
+        "xpm link -C 3rd-party/arm/arm-cmsis-rtos-validator",
+        "xpm link -C 3rd-party/chan/chan-fatfs",
+        "xpm link -C 3rd-party/segger/segger-rtt",
+        "xpm link -C 3rd-party/segger/segger-system-view"
+      ]
+    }
+  },
   "engines": {
     "node": ">=22.12"
   }

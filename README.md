@@ -40,6 +40,12 @@ of a separate project. All submodules track the `xpack-development` branch.
     - `riscv` - [micro-os-plus-iii-riscv](https://github.com/micro-os-plus/micro-os-plus-iii-riscv.git)
     - `synthetic-posix` - [micro-os-plus-iii-posix-arch](https://github.com/micro-os-plus/micro-os-plus-iii-posix-arch.git),
       to run on the development host
+- `3rd-party/` - the third-party projects used by the tests, packaged as
+  xPacks:
+  - `arm/arm-cmsis-rtos-validator` - [arm-cmsis-rtos-validator-xpack](https://github.com/xpack-3rd-party/arm-cmsis-rtos-validator-xpack.git)
+  - `chan/chan-fatfs` - [chan-fatfs-xpack](https://github.com/xpack-3rd-party/chan-fatfs-xpack.git)
+  - `segger/segger-rtt` - [segger-rtt-xpack](https://github.com/xpack-3rd-party/segger-rtt-xpack.git)
+  - `segger/segger-system-view` - [segger-system-view-xpack](https://github.com/xpack-3rd-party/segger-system-view-xpack.git)
 - `maintenance/` - the files used to build, format and maintain the projects,
   not part of the µOS++ runtime
 
