@@ -53,6 +53,8 @@
   "prettier.configPath": "maintenance/config/.prettierrc.json",
   "prettier.ignorePath": "maintenance/config/.prettierignore",
   //
+  "git.detectSubmodulesLimit": 30,
+  //
   "cmake.configureOnEdit": false,
   "cmake.ignoreCMakeListsMissing": true,
   "cmake.configureOnOpen": false,
