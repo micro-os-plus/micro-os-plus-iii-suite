@@ -42,6 +42,7 @@ of a separate project. All submodules track the `xpack-development` branch.
       to run on the development host
 - `3rd-party/` - the third-party projects used by the tests, packaged as
   xPacks:
+  - `arm/arm-cmsis-core` - [arm-cmsis-core-xpack](https://github.com/xpack-3rd-party/arm-cmsis-core-xpack.git)
   - `arm/arm-cmsis-rtos-validator` - [arm-cmsis-rtos-validator-xpack](https://github.com/xpack-3rd-party/arm-cmsis-rtos-validator-xpack.git)
   - `chan/chan-fatfs` - [chan-fatfs-xpack](https://github.com/xpack-3rd-party/chan-fatfs-xpack.git)
   - `libucontext/libucontext` - [libucontext-xpack](https://github.com/xpack-3rd-party/libucontext-xpack.git)

@@ -42,3 +42,7 @@
 	path = 3rd-party/libucontext/libucontext
 	url = https://github.com/xpack-3rd-party/libucontext-xpack.git
 	branch = xpack-development
+[submodule "3rd-party/arm/arm-cmsis-core"]
+	path = 3rd-party/arm/arm-cmsis-core
+	url = https://github.com/xpack-3rd-party/arm-cmsis-core-xpack.git
+	branch = xpack-development
