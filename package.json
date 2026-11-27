@@ -74,6 +74,7 @@
         "xpm link -C targets/architectures/riscv",
         "xpm link -C 3rd-party/arm/arm-cmsis-rtos-validator",
         "xpm link -C 3rd-party/chan/chan-fatfs",
+        "xpm link -C 3rd-party/libucontext/libucontext",
         "xpm link -C 3rd-party/segger/segger-rtt",
         "xpm link -C 3rd-party/segger/segger-system-view"
       ]

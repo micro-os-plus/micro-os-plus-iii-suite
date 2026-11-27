@@ -38,3 +38,7 @@
 	path = 3rd-party/segger/segger-system-view
 	url = https://github.com/xpack-3rd-party/segger-system-view-xpack.git
 	branch = xpack-development
+[submodule "3rd-party/libucontext/libucontext"]
+	path = 3rd-party/libucontext/libucontext
+	url = https://github.com/xpack-3rd-party/libucontext-xpack.git
+	branch = xpack-development

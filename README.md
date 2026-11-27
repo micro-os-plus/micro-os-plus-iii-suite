@@ -44,6 +44,7 @@ of a separate project. All submodules track the `xpack-development` branch.
   xPacks:
   - `arm/arm-cmsis-rtos-validator` - [arm-cmsis-rtos-validator-xpack](https://github.com/xpack-3rd-party/arm-cmsis-rtos-validator-xpack.git)
   - `chan/chan-fatfs` - [chan-fatfs-xpack](https://github.com/xpack-3rd-party/chan-fatfs-xpack.git)
+  - `libucontext/libucontext` - [libucontext-xpack](https://github.com/xpack-3rd-party/libucontext-xpack.git)
   - `segger/segger-rtt` - [segger-rtt-xpack](https://github.com/xpack-3rd-party/segger-rtt-xpack.git)
   - `segger/segger-system-view` - [segger-system-view-xpack](https://github.com/xpack-3rd-party/segger-system-view-xpack.git)
 - `maintenance/` - the files used to build, format and maintain the projects,
